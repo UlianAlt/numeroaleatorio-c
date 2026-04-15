@@ -3,9 +3,9 @@
 #include <time.h>
 
 int main(int argc, char *argv[]){
-    int min = atoi(argv[1]);
-    int max = atoi(argv[2]);
     if(argc == 3){
+        int min = atoi(argv[1]);
+        int max = atoi(argv[2]);
         srand(time(NULL));
         int result = min + rand() % (max - min + 1);
         printf("%d\n\n", result); 
